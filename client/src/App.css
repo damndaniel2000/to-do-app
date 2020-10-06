@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Saira+Semi+Condensed&family=Staatliches&family=Zilla+Slab&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+input,
+textarea {
+  outline: none;
+  border: none;
+}
+i {
+  cursor: pointer;
+}

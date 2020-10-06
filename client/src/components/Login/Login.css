@@ -1,0 +1,74 @@
+.form-pages {
+  background-color: blue;
+  color: #fff;
+  height: 100vh;
+}
+.form-container {
+  font-family: zilla slab;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.form-title {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: saira semi condensed;
+}
+.form-input {
+  display: block;
+  margin: 1rem 0;
+  background-color: transparent;
+  border: solid 2px #fff;
+  text-align: left;
+  color: #fff;
+  padding: 18px 15px;
+  width: 450px;
+  font-size: 25px;
+  font-family: Zilla Slab;
+}
+.form-label {
+  position: relative;
+  top: 27px;
+  background-color: blue;
+  font-size: 18px;
+}
+.form-checkbox-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.form-checkbox-container div {
+  align-items: center;
+  display: flex;
+}
+.form-submit {
+  background-color: #fff;
+  color: blue;
+  font-weight: bold;
+  padding: 10px 50px;
+  font-size: 30px;
+  margin-top: 2rem;
+  font-family: staatliches;
+}
+.form-error {
+  margin-top: -8px;
+  text-align: left;
+  color: #ff7875;
+  font-weight: bold;
+}
+
+.login-footer {
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  left: 43%;
+  font-size: 12px;
+  font-family: zilla slab;
+}
+
+.login-footer span {
+  display: block;
+  color: #fff;
+  margin-bottom: 5px;
+}
