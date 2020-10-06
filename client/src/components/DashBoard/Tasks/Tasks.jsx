@@ -12,6 +12,7 @@ import EditTaskForm from "./TaskModals/EditTaskModal";
 import TaskList from "./TasksDisplayContent/TasksList";
 
 const Tasks = () => {
+  //adding dummy data for display reasons
   const [tasks, setTasks] = useState([
     {
       taskTitle: "My Tasks",
@@ -38,6 +39,7 @@ const Tasks = () => {
   const [currentTaskSubIndex, setCurrentTaskSubIndex] = useState();
 
   useEffect(() => {
+    //finding out if current user has past saved data
     const users = JSON.parse(localStorage.getItem("user-details"));
     const currentLoggedUser = JSON.parse(localStorage.getItem("current-user"));
     const currentUser = users.filter(
@@ -134,6 +136,7 @@ const Tasks = () => {
   };
 
   const saveData = () => {
+    //saving tasks state in localStorage inside user's credentials object
     const users = JSON.parse(localStorage.getItem("user-details"));
     const currentLoggedUser = JSON.parse(localStorage.getItem("current-user"));
     const currentUser = users.filter(
@@ -150,6 +153,7 @@ const Tasks = () => {
 
   return (
     <>
+      {/*Context to all the child components*/}
       <TasksContext.Provider
         value={{
           taskName,
@@ -198,6 +202,7 @@ const Tasks = () => {
             );
           })}
         </div>
+        {/*Form Modals*/}
         {taskAddForm && <AddTaskForm />}
         {taskEditForm && <EditTaskForm />}
         {taskListAddForm && <AddTaskListForm />}

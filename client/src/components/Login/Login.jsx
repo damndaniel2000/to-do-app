@@ -9,12 +9,14 @@ const Login = () => {
   const history = useHistory();
 
   const [remember, setRemember] = useState(false);
+  //setting an error state for form validation
   const [error, setError] = useState({
     position: "",
     message: "",
   });
 
   const userDetails =
+    //the user's input goes through various amounts of validation
     localStorage.getItem("remembered-user") === null || ""
       ? null
       : JSON.parse(localStorage.getItem("remembered-user"));

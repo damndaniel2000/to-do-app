@@ -8,6 +8,7 @@ const NavBar = () => {
 
   useEffect(() => {
     const photoID = Math.floor(Math.random() * 1000);
+    //api request to picsum for profile pic with random ID
     axios
       .get(`https://picsum.photos/id/${photoID}/info`)
       .then((res) => setAvatar(res.data.download_url))
