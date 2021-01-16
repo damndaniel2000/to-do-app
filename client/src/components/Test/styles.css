@@ -1,0 +1,17 @@
+.simple-trans-main {
+  width: 100%;
+}
+.simple-trans-main > div {
+  margin: 0 auto;
+  cursor: pointer;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  will-change: transform, opacity;
+}
+#root {
+  width: 100%;
+  background-color: red;
+}
